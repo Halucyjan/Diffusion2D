@@ -7,6 +7,7 @@
 
 int main()
 {
+    Board board1(3, 5);
     std::cout << "Hello World!\n";
 }
 

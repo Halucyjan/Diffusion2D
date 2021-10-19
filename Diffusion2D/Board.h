@@ -1,4 +1,8 @@
 #pragma once
+
+#include <memory>
+#include <iostream>
+
 class Board
 {
 public:
@@ -7,7 +11,7 @@ public:
 	~Board();
 private:
 	int X, Y;
-	int** tab;
-
+	//int** tab;
+	std::unique_ptr < std::unique_ptr < int[] > [] > tab;
 };
 
