@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <iostream>
+#include <time.h>
 
 class Board
 {
@@ -9,6 +10,11 @@ public:
 	Board();
 	Board(int, int);
 	~Board();
+
+	void startingPositions();
+	void startingPositions(int);
+	void drawBoard();
+
 private:
 	int X, Y;
 	//int** tab;

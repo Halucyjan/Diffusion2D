@@ -7,8 +7,11 @@
 
 int main()
 {
-    Board board1(3, 5);
-    std::cout << "Hello World!\n";
+    Board board1(5, 5);
+    board1.startingPositions(10);
+    board1.drawBoard();
+
+    //std::cout << "Hello World!\n";
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
