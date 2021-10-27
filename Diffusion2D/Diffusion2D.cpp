@@ -3,11 +3,17 @@
 
 #include <iostream>
 #include "Board.h"
-
+#include "Controler.h"
+#include "Particle.h"
+#include "View.h"
 
 int main()
 {
     Board board1(5, 5);
+    Particle particle(0, 0);
+    particle.changePosition(5, 3);
+    
+
     /*board1.startingPositions(1);
     
     board1.drawBoard();
@@ -16,7 +22,7 @@ int main()
         board1.moveObjects();
         std::cin.get();
     }*/
-    //std::cout << "Hello World!\n";
+    std::cout << particle.calculateR() << "\n";
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
