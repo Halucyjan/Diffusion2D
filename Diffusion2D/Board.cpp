@@ -18,42 +18,47 @@ Board::Board(int x, int y)
 
 }
 
-void Board::startingPositions()
-{
-	for (int i = 0; i < this->Y; i++)
-		for (int j = 0; j < this->X; j++)
-			this->tab[i][j] = rand() % 2;
-}
-
-void Board::startingPositions(int N)
-{
-	//making every posision have value
-	for (int i = 0; i < this->Y; i++)
-		for (int j = 0; j < this->X; j++)
-			this->tab[i][j] = 0;
-	//random posision of N atoms
-	int j = 0, x=0, y=0;
-	while (j < N)
-	{
-		x = rand() % this->X;
-		y = rand() % this->Y;
-		if (this->tab[y][x] == 0)
-		{
-			this->tab[y][x] = 1;
-			j++;
-		}
-	}
-}
-
-void Board::drawBoard()
-{
-	for (int i = 0; i < this->Y; i++)
-	{
-		for (int j = 0; j < this->X; j++)
-			std::cout << this->tab[i][j] << " ";
-		std::cout << std::endl;
-	}
-}
+//void Board::startingPositions()
+//{
+//	for (int i = 0; i < this->Y; i++)
+//		for (int j = 0; j < this->X; j++)
+//			this->tab[i][j] = rand() % 2;
+//}
+//
+//void Board::startingPositions(int N)
+//{
+//	making every posision have value
+//	for (int i = 0; i < this->Y; i++)
+//		for (int j = 0; j < this->X; j++)
+//			this->tab[i][j] = 0;
+//	random posision of N atoms
+//	int j = 0, x=0, y=0;
+//	while (j < N)
+//	{
+//		x = rand() % this->X;
+//		y = rand() % this->Y;
+//		if (this->tab[y][x] == 0)
+//		{
+//			this->tab[y][x] = 1;
+//			j++;
+//		}
+//	}
+//}
+//
+//void Board::drawBoard()
+//{
+//	for (int i = 0; i < this->Y; i++)
+//	{
+//		for (int j = 0; j < this->X; j++)
+//			std::cout << this->tab[i][j] << " ";
+//		std::cout << std::endl;
+//	}
+//}
+//
+//void Board::moveObjects()
+//{
+//
+//}
 
 Board::~Board()
 {

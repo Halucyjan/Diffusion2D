@@ -8,9 +8,14 @@
 int main()
 {
     Board board1(5, 5);
-    board1.startingPositions(10);
+    /*board1.startingPositions(1);
+    
     board1.drawBoard();
-
+    while (1) 
+    {
+        board1.moveObjects();
+        std::cin.get();
+    }*/
     //std::cout << "Hello World!\n";
 }
 
