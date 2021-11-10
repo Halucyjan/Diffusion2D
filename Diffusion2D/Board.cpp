@@ -2,7 +2,6 @@
 
 Board::Board()
 {
-	srand(time(NULL));
 	this->X = 0;
 	this->Y = 0;
 }
@@ -10,7 +9,6 @@ Board::Board()
 Board::Board(int x, int y)
 	:X(x), Y(y)
 {
-	srand(time(NULL));
 	this->tab = std::make_unique<std::unique_ptr < int[] >[]> (Y);
 
 	for (int i = 0; i < this->Y; i++)
@@ -45,6 +43,11 @@ Board::Board(int x, int y)
 //	}
 //}
 //
+int Board::value(int x, int y)
+{
+	return this->tab[y][x];
+}
+
 void Board::drawBoard()
 {
 	for (int y = 0; y < this->Y; y++)

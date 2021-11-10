@@ -2,7 +2,7 @@
 
 #include <memory>
 #include <iostream>
-#include <time.h>
+
 
 class Board
 {
@@ -16,11 +16,11 @@ public:
 	void setOne(int, int);
 	void setZero(int, int);
 	void drawBoard();
+	int value(int, int);
 	//void moveObjects();
 
 private:
 	int X, Y;
-	//int** tab;
 	std::unique_ptr < std::unique_ptr < int[] > [] > tab;
 };
 

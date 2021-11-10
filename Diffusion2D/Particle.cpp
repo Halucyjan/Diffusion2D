@@ -20,6 +20,14 @@ double Particle::calculateR()
 	return R;
 }
 
+void Particle::startPosition(int startX, int startY)
+{
+	this->startingX = startX;
+	this->startingY = startY;
+	this->X = startingX;
+	this->Y = startingY;
+}
+
 int Particle::getX()
 {
 	return this->X;

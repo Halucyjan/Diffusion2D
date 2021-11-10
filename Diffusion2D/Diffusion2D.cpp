@@ -9,7 +9,8 @@
 
 int main()
 {
-    Controler control(5,5,1);
+    Controler control(5,5,12);
+    control.Draw();
 
 
     /*Board board1(5, 5);

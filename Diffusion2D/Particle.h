@@ -7,6 +7,7 @@ class Particle
 public:
 	Particle();
 	Particle(int, int);
+	void startPosition(int, int);
 	double calculateR();
 	int getX();
 	int getY();
