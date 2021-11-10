@@ -11,10 +11,12 @@ public:
 	Board(int, int);
 	~Board();
 
-	/*void startingPositions();
-	void startingPositions(int);
+	//void startingPositions();
+	//void startingPositions(int);
+	void setOne(int, int);
+	void setZero(int, int);
 	void drawBoard();
-	void moveObjects();*/
+	//void moveObjects();
 
 private:
 	int X, Y;

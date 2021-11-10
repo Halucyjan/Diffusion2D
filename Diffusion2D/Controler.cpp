@@ -20,15 +20,15 @@ Controler::Controler(int w, int h, int n)
 
 void Controler::setParticle()
 {
-
+	particles = std::make_unique<Particle[]>(numberOfParticle);
 }
 
 void Controler::setBoard()
 {
-
+	board = std::make_unique<Board>(width, height);
 }
 
-bool Controler::checkBoardAndParticle()
+bool Controler::checkBoardAndParticle() //if number of particle < size of board, return true
 {
 	if ((this->height * this->width) > this->numberOfParticle)
 		return true;

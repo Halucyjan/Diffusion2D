@@ -45,15 +45,23 @@ Board::Board(int x, int y)
 //	}
 //}
 //
-//void Board::drawBoard()
-//{
-//	for (int i = 0; i < this->Y; i++)
-//	{
-//		for (int j = 0; j < this->X; j++)
-//			std::cout << this->tab[i][j] << " ";
-//		std::cout << std::endl;
-//	}
-//}
+void Board::drawBoard()
+{
+	for (int y = 0; y < this->Y; y++)
+	{
+		for (int x = 0; x < this->X; x++)
+			std::cout << this->tab[y][x] << " ";
+		std::cout << std::endl;
+	}
+}
+void Board::setOne(int x, int y)
+{
+	tab[y][x] = 1;
+}
+void Board::setZero(int x, int y)
+{
+	tab[y][x] = 0;
+}
 //
 //void Board::moveObjects()
 //{

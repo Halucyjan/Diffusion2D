@@ -9,9 +9,12 @@
 
 int main()
 {
-    Board board1(5, 5);
+    Controler control(5,5,1);
+
+
+    /*Board board1(5, 5);
     Particle particle(0, 0);
-    particle.changePosition(5, 3);
+    particle.changePosition(5, 3);*/
     
 
     /*board1.startingPositions(1);
@@ -22,7 +25,7 @@ int main()
         board1.moveObjects();
         std::cin.get();
     }*/
-    std::cout << particle.calculateR() << "\n";
+    //std::cout << particle.calculateR() << "\n";
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
